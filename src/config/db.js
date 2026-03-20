@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   password: process.env.DB_PASSWORD || "",
   database: process.env.DB_NAME || "nodejs_api",
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: 100,
 });
 
 let dbReady = false;
